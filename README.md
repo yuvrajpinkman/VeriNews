@@ -45,9 +45,15 @@ roberta-env\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-### 4. Download model files
+### 4. Set up Hugging Face credentials
 
-Model files are too large for GitHub. Follow the instructions in [Model.md](Model.md).
+The app automatically loads the fine-tuned model from Hugging Face. Add your Hugging Face token to `.streamlit/secrets.toml`:
+
+```toml
+HF_TOKEN = "your_huggingface_token_here"
+```
+
+Get your token from https://huggingface.co/settings/tokens
 
 ### 5. Run the app
 
@@ -57,7 +63,8 @@ streamlit run app.py
 
 ## Notes
 
-- Ensure model artifacts are placed in the expected `saved_model/` subfolders before launching the app.
+- The fine-tuned RoBERTa model is hosted on Hugging Face: [singhyuvraj999/Roberta_FineTuned](https://huggingface.co/singhyuvraj999/Roberta_FineTuned)
+- If you prefer to use a locally downloaded model instead, follow the instructions in [Model.md](Model.md).
 - If PowerShell blocks activation scripts, run:
 
 ```powershell

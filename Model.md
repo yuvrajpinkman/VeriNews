@@ -1,13 +1,18 @@
-## Model Download
+## Model Setup
 
-The fine-tuned RoBERTa model is not included in this repo due to GitHub's file size limits.
+The fine-tuned RoBERTa model is available on Hugging Face Hub and automatically loaded by the app. See the [README](README.md) for quick setup instructions.
 
-**Download from Google Drive:** [Click here](https://drive.google.com/drive/folders/11ulkQ9fCmWuK8lC6InIT5U5npwjW9_I-?usp=sharing)
+### Alternative: Local Model Setup
 
-After downloading, place the following files inside a folder named `saved_model/` in the root of this project:
+If you prefer to use a locally downloaded model instead of the Hugging Face Hub version, follow these steps:
 
-- model.safetensors
-- config.json
-- tokenizer.json
-- tokenizer_config.json
-- training_args.bin
+1. **Download from Google Drive:** [Click here](https://drive.google.com/drive/folders/11ulkQ9fCmWuK8lC6InIT5U5npwjW9_I-?usp=sharing)
+
+2. Place the following files inside a folder named `saved_model/` in the root of this project:
+   - model.safetensors
+   - config.json
+   - tokenizer.json
+   - tokenizer_config.json
+   - training_args.bin
+
+3. Update `app.py` to use the local model path instead of the Hugging Face Hub ID
