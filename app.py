@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Config
 
-MODEL_PATH = "saved_model/roberta-welfake-final"
+MODEL_PATH = "singhyuvraj999/Roberta_FineTuned"
 MAX_LENGTH = 256
 
 SUSPICIOUS_PHRASES = [
