@@ -5,7 +5,7 @@ It predicts whether a news article is real or fake and helps with verification b
 
 ## Model
 
-- Base model: `roberta-base`
+- Base model: `RoBERTa-base` from Hugging Face Transformers
 - Fine-tuned on:
 	- LIAR
 	- ISOT
@@ -23,14 +23,16 @@ It predicts whether a news article is real or fake and helps with verification b
 ### 1. Clone and enter the project
 
 ```bash
-git clone <https://github.com/yuvrajpinkman/VeriNews.git>
+git clone https://github.com/yuvrajpinkman/VeriNews.git
 cd VeriNews
 ```
 
 ### 2. Create and activate a virtual environment (recommended)
 
 ```bash
+# Python 3.10+ is required
 python -m venv roberta-env
+
 # Windows PowerShell
 roberta-env\Scripts\Activate.ps1
 ```
