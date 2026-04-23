@@ -4,7 +4,8 @@ import requests
 import feedparser
 from transformers import RobertaTokenizer, RobertaForSequenceClassification
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+from huggingface_hub import login
+login(token=st.secrets["HF_TOKEN"])
 
 # Config
 
@@ -144,7 +145,7 @@ def build_fake_reasons(title, article, signals, confidence):
 
 def get_newsapi_key():
     try:
-        return st.secrets["NEWSAPI_KEY"]
+        return st.secrets["NEWS_API_KEY"]
     except:
         return None
 
