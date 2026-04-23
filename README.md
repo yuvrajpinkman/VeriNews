@@ -18,6 +18,8 @@ It predicts whether a news article is real or fake and helps with verification b
 - Support for multiple fake-news datasets
 - Live reference content retrieval for verification
 
+![App Screenshot](assets\architecture.png)
+
 ## Quick Start
 
 ### 1. Clone and enter the project
