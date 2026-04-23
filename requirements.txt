@@ -81,7 +81,7 @@ tokenizers==0.22.2
 toml==0.10.2
 torch==2.5.1
 torchaudio==2.5.1
-torchvision==0.20.1
+torchvision==0.20.1 #+cu121 for CUDA 12.1, change to +cpu for CPU-only
 tornado==6.5.4
 tqdm==4.67.3
 transformers==5.1.0
