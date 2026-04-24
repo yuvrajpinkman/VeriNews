@@ -288,7 +288,7 @@ if st.button("Predict"):
  
         # Groq LLM second opinion
         st.markdown("---")
-        st.subheader("LLM Verification (Groq / Llama 3)")
+        st.subheader("LLM Verification (Groq | Llama 3)")
  
         with st.spinner("Getting second opinion from LLM..."):
             llm_result = llm_verify(title, article, pred, confidence)
